@@ -1,4 +1,4 @@
-from graphs import plot_vehicle_year_distribution
+from graphs import plot_vehicle_year_distribution, plot_transmission_distribution, plot_brand_distribution
 import csv
 
 def parse_csv(csv_file):
@@ -13,3 +13,6 @@ def parse_csv(csv_file):
 if __name__ == '__main__':
     data = parse_csv('files/out_20000.csv')
     plot_vehicle_year_distribution(data)
+    plot_transmission_distribution(data)
+    plot_brand_distribution(data)
+
